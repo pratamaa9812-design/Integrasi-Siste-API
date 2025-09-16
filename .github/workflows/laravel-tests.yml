@@ -43,9 +43,10 @@ jobs:
       - name: Create .env file
         run: |
           cp .env.example .env
-          phpartisan key:generate
+          php artisan key:generate
 
       # 6. Run tests
       - name: Run PHPUnit tests
         run: php artisan test
+
 
